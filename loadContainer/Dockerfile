@@ -5,10 +5,10 @@ FROM node:18.18.0
 WORKDIR /app
 
 # Copy package.json and package-lock.json if available
-COPY package*.json ./
+# COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+# RUN npm install
 
 # Install the suitecloud-cli library globally using npm
 RUN npm install -g suitecloud-cli --unsafe --acceptsuitecloudsdklicense --supressSuiteCloudSDKLicensePrompt
