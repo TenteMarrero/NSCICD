@@ -8,7 +8,7 @@ WORKDIR /app
 # COPY package*.json ./
 
 # Install dependencies
-# RUN npm install
+RUN npm install -g npm@10.5.2
 
 # Install the suitecloud-cli library globally using npm
 RUN npm install -g @oracle/suitecloud-cli --unsafe --acceptsuitecloudsdklicense --supressSuiteCloudSDKLicensePrompt
