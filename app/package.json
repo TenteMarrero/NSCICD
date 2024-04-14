@@ -1,0 +1,7 @@
+{
+    "name": "my-nodejs-app",
+    "version": "1.0.0",
+    "description": "A sample Node.js application",
+    "author": "Your Name",
+    "license": "MIT"
+}
