@@ -11,7 +11,7 @@ WORKDIR /app
 # RUN npm install
 
 # Install the suitecloud-cli library globally using npm
-RUN npm install -g suitecloud-cli --unsafe --acceptsuitecloudsdklicense --supressSuiteCloudSDKLicensePrompt
+RUN npm install -g @oracle/suitecloud-cli --unsafe --acceptsuitecloudsdklicense --supressSuiteCloudSDKLicensePrompt
 
 # Set the entrypoint command to suitecloud-cli
 ENTRYPOINT ["suitecloud"]
