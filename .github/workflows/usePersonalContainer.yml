@@ -1,0 +1,17 @@
+name: Use Personal Container
+
+on:
+    workflow_dispatch:
+
+jobs:
+  use-container:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/tentemarrero/testimage:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
