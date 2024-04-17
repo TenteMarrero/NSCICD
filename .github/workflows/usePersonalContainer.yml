@@ -19,7 +19,8 @@ jobs:
       - name: Print current folder
         run: |
           echo "Current folder: ${{ github.workspace }}"
-      - name: List folder content
+      - name: Call Hello World
         run: |
-          cd home/runner/appContainer
+          cd ../../..
+          cd appContainer
           node ./helloworld.js
