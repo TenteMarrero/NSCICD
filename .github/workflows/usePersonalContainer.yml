@@ -21,5 +21,9 @@ jobs:
           echo "Current folder: ${{ github.workspace }}"
       - name: List folder content
         run: |
-          cd ../../..
-          tree
+          cd ..
+          ls -l
+          cd ..
+          ls -l
+          cd ..
+          ls -l
