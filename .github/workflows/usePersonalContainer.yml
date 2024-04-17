@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/tentemarrero/testimage:latest
+      #options: --workdir /home/runner/appContainer  # Set the working directory inside the container
       credentials:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
@@ -20,4 +21,5 @@ jobs:
           echo "Current folder: ${{ github.workspace }}"
       - name: List folder content
         run: |
-          ls -l
+          cd ../../..
+          tree
