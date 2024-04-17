@@ -5,7 +5,7 @@ FROM node:18.18.0
 WORKDIR /app
 
 # Copy package.json and package-lock.json if available
-# COPY package*.json ./
+COPY app/helloworld.js .
 
 # Install dependencies
 RUN npm install -g npm@10.5.2
