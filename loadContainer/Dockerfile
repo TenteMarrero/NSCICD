@@ -2,7 +2,7 @@
 FROM node:18.18.0
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /appContainer
 
 # Copy package.json and package-lock.json if available
 COPY app/helloworld.js .
