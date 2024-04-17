@@ -21,9 +21,5 @@ jobs:
           echo "Current folder: ${{ github.workspace }}"
       - name: List folder content
         run: |
-          cd ..
-          ls -l
-          cd ..
-          ls -l
-          cd ..
-          ls -l
+          cd home/runner/appContainer
+          node ./helloworld.js
